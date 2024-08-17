@@ -10,9 +10,10 @@
     <OutputPath>..\..\..\..\..\PoeHelper\Plugins\Compiled\MiscInformation\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Core\Core.csproj">
+    <Reference Include="ExileCore">
+      <HintPath>$(exapiPackage)\ExileCore.dll</HintPath>
       <Private>False</Private>
-    </ProjectReference>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="LinqFaster" Version="1.0.0" />
